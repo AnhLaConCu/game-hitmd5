@@ -1,5 +1,7 @@
 const WebSocket = require("ws");
 const express = require("express");
+const cors = require("cors");
+
 const app = express();
 const PORT = process.env.PORT || 5050;
 
@@ -19,6 +21,8 @@ let currentData = {
   pattern: "",
   du_doan: ""
 };
+
+app.use(cors()); // ✅ Gỡ chặn CORS cho web
 
 function timestamp() {
   return new Date().toLocaleTimeString("vi-VN", { hour12: false });
