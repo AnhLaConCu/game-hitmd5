@@ -1,6 +1,7 @@
 {
   "name": "game-hitmd5",
   "version": "1.0.0",
+  "description": "Tool WebSocket Tài Xỉu - by binhtool90",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -8,6 +9,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "ws": "^8.15.1"
+    "ws": "^8.13.0"
   }
 }
